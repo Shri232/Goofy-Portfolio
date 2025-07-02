@@ -1,0 +1,311 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+#mainContainer {
+    border: 3px solid black;
+    margin: 3rem 3rem;
+    height: 140rem;
+    border-radius: 2em;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Inter';
+    background-image: url("./background.jpg");
+}
+
+#navbar {
+    position: absolute;
+    background-color: #EBB000;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: end;
+}
+
+#image {
+    position: absolute;
+    border: 2px solid black;
+    width: 12rem;
+    height: 12rem;
+    top: 4rem;
+    left: 4rem;
+    border-radius: 50%;
+}
+
+#navList{
+    position: absolute;
+    top: 5rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    right: 4rem;
+    gap: 3rem;
+    font-size: 1.5rem;
+    color: #5e3302;
+}
+#navList li a {
+    text-decoration: none;
+    color: #5e3302;
+}
+
+#name{
+    position: absolute;
+    top: 8rem;
+    left: 18rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5e3302;
+    text-decoration-line: underline;
+}
+
+
+#about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 50px 2fr;
+    top: 13em;
+    left: 12em;
+    max-width: 50rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1rem; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    font-size: 1.5rem;
+    color: #5e3302;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    position: relative;
+    gap: 1rem; 
+    position: relative;
+}
+
+#about:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+#aboutHeading{
+    grid-column: 2;
+    padding: 20px;
+}
+#aboutcontent{
+    grid-column: 2 ;
+    padding: 20px;
+}
+#aboutImg{
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    grid-row: 1/3;
+}
+#kahe {
+    color: #EBB000;
+    font-weight: bold;
+}
+
+#whatido{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 50px 2fr;
+    top: 13em;
+    left: 12em;
+    max-width: 50rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1rem; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    font-size: 1.5rem;
+    color: #5e3302;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    position: relative;
+    gap: 1rem; 
+}
+#whatido:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+#whatidoHeading{
+    grid-column: 2;
+    padding: 20px;
+}
+#whatidocontent{
+    grid-column: 2 ;
+    padding: 20px;
+}
+#whatidoImg{
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    margin-right: 100px;
+    width: 15rem;
+    height: 15rem;
+    grid-row: 1/2;
+}
+
+#projects {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 40px 100px 1fr 1fr;
+    top: 13em;
+    left: 12em;
+    max-width: 50rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1rem; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    font-size: 1.5rem;
+    color: #5e3302;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    position: relative;
+    gap: 1rem; 
+    grid-row-gap: 0;
+}
+#projects:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+#projectsHeading{
+    grid-column: 2;
+    padding-left: 20px;
+}
+#projectscontent{
+    grid-column: 2 ;
+    padding: 20px;
+}
+#projectsImg{
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    margin-right: 100px;
+    width: 15rem;
+    height: 15rem;
+    grid-row: 1/3;
+}
+#qrgen,#dopplerDork{
+    grid-column:2 ;
+    font-size: 20px;
+    margin-left: 1rem;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+#projectscontent{
+    font-style: italic;
+    margin-top: 1em;
+    font-size: 20px;
+    text-decoration-line: underline;
+}
+#qrgentxt,#dopplerDorktxt{
+    font-size: 20px;
+    font-weight: bold;
+    color: #EBB000;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+#qrgenlink,#dopplerDorklink{
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: bold;
+    color: #5e3302;
+    text-decoration: underline;
+
+}
+
+#contact {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 30px .5fr .7fr;
+    top: 13em;
+    left: 12em;
+    max-width: 50rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1rem; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    font-size: 1.5rem;
+    color: #5e3302;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    position: relative;
+    gap: 1rem; 
+    max-height: 20rem;
+}
+
+#contact:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+#contactHeading{
+    grid-column: 2;
+    padding-left: 20px;
+    margin-top: 0;
+    
+}
+
+#contactcontent{
+    font-style: italic;
+    margin-top: 1em;
+    padding-left: 20px;
+    font-size: 20px;
+    text-decoration-line: underline;
+    grid-column-start: 2;
+    max-height: 10px;
+}
+
+#contactImg{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    margin-right: 100px;
+    width: 15rem;
+    height: 15rem;
+    grid-row: 1/3;
+}
+
+#contactLinks{
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 40px;
+    gap: 2rem;
+}
+#linkedin, #github, #instagram {
+    font-size: 20px;
+    text-decoration-line: underline;
+    font-weight: bold;
+    color: #5e3302;
+    text-decoration: none;
+}
+
+#qrgenlink:hover,#dopplerDorklink:hover,#linkedin:hover, #github:hover, #instagram:hover {
+    color: #EBB000;
+}
+
+#navList li {
+  position: relative;
+  cursor: pointer;
+}
+
+#navList li::after {
+  content: "";
+  position: absolute;
+  bottom: -4px; 
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #5e3302;
+  transition: width 0.3s ease-in-out;
+}
+
+#navList li:hover::after {
+  width: 100%;
+}
